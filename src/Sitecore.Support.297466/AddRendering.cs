@@ -111,7 +111,9 @@
               args.IsPostBack = false;
               args.Parameters["SelectedRendering"] = itemNotNull.ID.ToShortID().ToString();
               args.Parameters["OpenProperties"] = flag2.ToString().ToLowerInvariant();
-              SheerResponse.ShowModalDialog(getRenderingDatasourceArgs.DialogUrl, "460px", "460px", string.Empty, true);
+              #region Modified code
+              SheerResponse.ShowModalDialog(getRenderingDatasourceArgs.DialogUrl, "1200px", "700px", string.Empty, true);
+              #endregion
               args.WaitForPostBack();
             }
             else
